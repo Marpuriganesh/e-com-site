@@ -1,0 +1,122 @@
+.item_container {
+  width: 30em;
+  height: 35em;
+  /* outline: 1px solid rgba(0, 0, 0, 0.418); */
+  outline-offset: 4px;
+  .itemEdit {
+    -webkit-user-select: none; /* Safari */
+    -ms-user-select: none; /* IE 10 and IE 11 */
+    user-select: none; /* Standard syntax */
+    width: 100%;
+    height: 100%;
+    background-color: rgb(236, 235, 235);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    border-radius: 10px;
+    overflow: hidden;
+    gap: 0.5em;
+    cursor: pointer;
+    .img_container {
+      width: 90%;
+      height: 70%;
+      outline: 0.1em solid rgba(0, 0, 0, 0.418);
+      background-color: white;
+      position: relative;
+      #img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+        scale: 0.8;
+      }
+      #delete-item {
+        position: absolute;
+        width: 1.7em;
+        height: 1.7em;
+        top: 0.7em;
+        right: 0.7em;
+        opacity: 0.5;
+      }
+      #delete-item:hover {
+        opacity: 1;
+        cursor: pointer;
+      }
+      border-radius: 1em;
+      -webkit-border-radius: 1em;
+      -moz-border-radius: 1em;
+      -ms-border-radius: 1em;
+      -o-border-radius: 1em;
+    }
+    .title {
+      margin-top: 0.5em;
+      font-size: 1em;
+      font-family: Helvetica, sans-serif;
+      display: inline-block;
+      white-space: nowrap;
+      overflow: hidden;
+      text-overflow: ellipsis;
+      font-weight: 500;
+      /* outline: 1px solid black; */
+      width: 90%;
+    }
+    .category_container {
+      width: 90%;
+      .category {
+        font-size: 0.7em;
+        font-family: Helvetica, sans-serif;
+        background-color: rgb(255, 255, 255);
+        padding: 0.5em;
+        border-radius: 0.5em;
+        -webkit-border-radius: 0.5em;
+        -moz-border-radius: 0.5em;
+        -ms-border-radius: 0.5em;
+        -o-border-radius: 0.5em;
+      }
+      .category:hover {
+        cursor: pointer;
+        background-color: rgb(151, 150, 150);
+      }
+    }
+
+    .price {
+      font-size: 2.5em;
+      font-family: Helvetica, sans-serif;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      /* overflow: hidden; */
+      font-weight: 500;
+      /* outline: 1px solid black; */
+      width: 90%;
+      height: 10%;
+      span {
+        display: flex;
+        justify-content: center;
+        position: relative;
+        #dollar {
+          font-size: 0.7em;
+        }
+      }
+      button {
+        background-color: black;
+        color: white;
+        border-radius: 0.5em;
+        width: 20%;
+        height: 70%;
+        cursor: pointer;
+        border-style: none;
+        font-size: 0.5em;
+        -webkit-border-radius: 0.5em;
+        -moz-border-radius: 0.5em;
+        -ms-border-radius: 0.5em;
+        -o-border-radius: 0.5em;
+      }
+      button:hover {
+        background-color: white;
+        outline: 1px solid rgba(0, 0, 0, 0.555);
+        color: black;
+      }
+    }
+  }
+}
