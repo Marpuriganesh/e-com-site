@@ -1,0 +1,6 @@
+{
+    "workspaces": [
+      "server",
+      "site"
+    ]
+  }
